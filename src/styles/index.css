@@ -1,0 +1,602 @@
+*::-webkit-scrollbar {
+  height: 9px;
+  width: 9px; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: linear-gradient(
+    185.69deg,
+    rgba(244, 251, 251, 0.69) -1.11%,
+    rgba(218, 242, 242, 0.09) 100.58%
+  );
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #2f4f4f;
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid #2f4f4f; /* creates padding around scroll thumb */
+}
+.left-side {
+  width: 20%;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  box-shadow: 5px 10px 8px #888888;
+  background: linear-gradient(
+    185.69deg,
+    rgba(244, 251, 251, 0.69) -1.11%,
+    rgba(218, 242, 242, 0.09) 100.58%
+  );
+}
+.whiteBackground {
+  background-color: white;
+}
+.bodyColour {
+  background: linear-gradient(
+    185.69deg,
+    rgba(244, 251, 251, 0.69) -1.11%,
+    rgba(218, 242, 242, 0.09) 100.58%
+  );
+}
+.rightSide {
+  width: 22%;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  background: linear-gradient(
+    185.69deg,
+    rgba(244, 251, 251, 0.69) -1.11%,
+    rgba(218, 242, 242, 0.09) 100.58%
+  );
+  opacity: 0.7;
+}
+.width1em {
+  width: 1em;
+}
+.flex {
+  display: flex;
+}
+.cardFlex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cardLabel {
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+}
+.gstButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+}
+
+.addPersonButton {
+  background: #21362a;
+  border-radius: 35.5px;
+  width: 175px;
+  height: 36px;
+  color: white;
+  font-weight: 200;
+  margin: 5px 0 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.uploadButton {
+  width: 70px;
+  height: 70px;
+  /* background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='12' ry='12' stroke='%23333' stroke-width='1' stroke-dasharray='9' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e"); */
+  border-radius: 12px;
+}
+.previewCard {
+  display: flex;
+  /* border: 1px solid #8d8d8d; */
+  text-align: center;
+  border-radius: 5px;
+  opacity: 0.8;
+  justify-content: space-around;
+  min-width: 70px;
+  min-height: 78px;
+  margin: 0px 5px -10px 10px;
+  position: relative;
+}
+
+/* .css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  font-family: "Poppins" !important;
+  font-weight: 600 !important;
+  color: #000000 !important;
+} */
+.css-1rxz5jq-MuiSelect-select-MuiInputBase-input-MuiInput-input:focus {
+  background-color: white !important;
+}
+.uploadImageClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.uploadButtonText {
+  color: black;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+
+.MuiTypography-root,
+.MuiButton-root {
+  font-family: "Poppins" !important;
+}
+.socialModalHeading {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 40px 0px 40px;
+}
+.modalButtonClose {
+  background: none;
+  border: none;
+}
+.modalButtonClose:hover {
+  opacity: 0.5;
+}
+.modalImageClose {
+  width: 20px;
+  opacity: 0.8;
+}
+.digitalModalHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 40px 0px 40px;
+}
+.digitalModalHeading1 {
+  width: 231px;
+  height: 21px;
+  left: 39px;
+  top: 150px;
+  display: flex;
+  flex-direction: row;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.8;
+  margin-top: -25px;
+}
+.digitalModalHeading2 {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 5px;
+  line-height: 28px;
+  color: #000000;
+  opacity: 0.5;
+}
+.digitalModalHeading3 {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+  opacity: 0.8;
+  /* margin-top: -5px; */
+}
+.digitalModalHeading4 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+.fileUploader {
+  max-width: 100px !important;
+  max-height: 100px !important;
+  border: dashed 2px #9c9c9c;
+  border-radius: 15px;
+}
+
+.css-5ryogn-MuiButtonBase-root-MuiSwitch-switchBase.Mui-checked
+  + .MuiSwitch-track {
+  background-color: #2b3131 !important;
+}
+.shareAccessModalBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px 0 0 40px;
+}
+.uploadDocumentModalBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-top: 20px;
+}
+.spaceBetween {
+  justify-content: space-between;
+}
+.loginHeader {
+  /* background-image: url("../assets/headerBg.png"); */
+  height: 73px;
+  display: flex;
+  justify-content: start;
+  padding: 0px 166px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.leftHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: #ffffff;
+}
+.leftText {
+  margin: 24px 0 0 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.logoBox {
+  height: 27.34px;
+  width: 27.34px;
+  cursor: pointer;
+}
+.logoContainer {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 30px 0 0 0;
+}
+.companyName {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  color: #ffffff;
+  margin-top: 103px;
+}
+.rightDivHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 48px;
+  color: #2f4f4f;
+  @media screen and (max-width: 992px) {
+    font-size: 25px;
+    line-height: 48px;
+  }
+}
+.rightDivSubHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 48px;
+  color: #2f4f4f;
+  @media screen and (max-width: 992px) {
+    font-size: 25px;
+    line-height: 48px;
+  }
+}
+.rightDivText {
+  margin: 29px 0 0 0;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  /* or 212% */
+  display: flex;
+  align-items: center;
+  color: #000000;
+  @media screen and (max-width: 992px) {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
+.parallelHeading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 48px;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  padding: 0px !important;
+}
+.loginLeftImage {
+  /* background-image: url("../assets/loginLeftImage.png"); */
+  min-height: 765px;
+}
+
+.leftDiv {
+  padding: 33px 0px 33px 150px;
+  min-height: 380px;
+  background-repeat: round;
+  /* background-image: url("../assets/footerBg.png"); */
+
+  @media screen and (max-width: 992px) {
+    padding: 33px 10px 20px 20px;
+  }
+}
+.inputDiv {
+  margin: 28px 0 0 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerInput {
+  width: 100%;
+  height: 48px;
+  background: #ffffff;
+  border: 1px solid #2f4f4f;
+  border-radius: 6px;
+}
+.rightDiv {
+  padding: 33px 166px 33px 39px;
+  min-height: 380px;
+  background: linear-gradient(
+    250.49deg,
+    rgb(244, 251, 251) -4.11%,
+    rgb(244, 251, 251) 99.51%
+  );
+  @media screen and (max-width: 992px) {
+    padding: 33px 20px 20px 20px;
+  }
+}
+.rightForm {
+  box-shadow: 0px 0px 8px #88888826;
+  background-color: white;
+  margin: 50px 10px 0px 0px;
+  border-radius: 10px;
+  padding: 15px 15px 15px 15px;
+}
+.rightFormHeading {
+  font-size: 16px;
+  letter-spacing: 0.02em;
+}
+.rightFormSubHeading {
+  font-size: 12px;
+  font-weight: 400;
+}
+.heading {
+  /* position: absolute; */
+  width: 181px;
+  height: 48px;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 48px;
+  /* identical to box height, or 160% */
+  text-align: center;
+  color: #2f4f4f;
+  margin-left: 30px;
+}
+.sub-heading {
+  /* position: absolute; */
+  width: 118px;
+  height: 48px;
+  font-size: 16px;
+  line-height: 48px;
+  /* identical to box height, or 300% */
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin-left: 30px;
+}
+.list-item {
+  width: 145px;
+  height: 34px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 48px;
+  /* or 343% */
+  display: flex;
+  align-items: center;
+  color: #000000;
+  opacity: 0.8;
+}
+.span-one {
+  width: 7px;
+  height: 14px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height */
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.sectionBoxColour {
+  background-color: linear-gradient(
+    185.69deg,
+    rgba(244, 251, 251, 0.69) -1.11%,
+    rgba(218, 242, 242, 0.09) 100.58%
+  );
+}
+
+.sidebar-heading {
+  display: flex;
+  flex-wrap: wrap;
+  height: 48px;
+  font-style: normal;
+  font-size: 29px;
+  line-height: 33px;
+  text-align: center;
+  color: #2f4f4f;
+  margin-left: 30px;
+}
+.sidebar-sub-heading {
+  width: 118px;
+  height: 48px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  color: #000000;
+  margin: -20px 0 10px 30px;
+}
+.side-nav-list {
+  display: "flex";
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 14px;
+  border: 2px solid rgba(47, 79, 79, 0.8);
+  text-align: center;
+  justify-content: center;
+  margin-left: 30px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+.modalManualUploadText {
+  text-align: left;
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+.modalManualUploadText:hover {
+  color: #1565c0;
+}
+.fileScroll {
+  padding: 15px 0px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+.fileScrollDigitalMarketing {
+  padding: 25px 0px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  /* white-space: nowrap; */
+  margin-top: -25px;
+  cursor: pointer;
+}
+.panImage {
+  padding: 10px 0px;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  cursor: pointer;
+}
+/* section */
+.section {
+  background: linear-gradient(
+    185.69deg,
+    rgba(244, 251, 251, 0.69) -1.11%,
+    rgba(218, 242, 242, 0.09) 100.58%
+  );
+  opacity: 0.9;
+  width: calc(58% - 100px);
+  padding: 70px 50px 0px 50px;
+}
+.removePdf {
+  position: absolute;
+  top: -11px;
+  right: -10px;
+}
+.removePdf:hover {
+  opacity: 0.5;
+}
+.section-heading {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #000000;
+  opacity: 0.8;
+}
+.companyHeading {
+  font-weight: 400;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.section-sub-heading {
+  color: #000000;
+  /* height: 28px; */
+  /* left: 301px;
+  top: 207px; */
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.section-title {
+  width: 427px;
+  /* height: 76px; */
+  left: 300px;
+  top: 221px;
+  line-height: 41px;
+  color: #000000;
+}
+.section-sub-heading-CF {
+  margin: 20px 0 20px 50px;
+  width: 649px;
+  /* height: 76px; */
+  left: 300px;
+  top: 177px;
+  font-weight: 900;
+  font-style: bold;
+  font-size: 22px;
+  line-height: 41px;
+  color: #000000;
+}
+.css-10hburv-MuiTypography-root {
+  font-size: 12px !important;
+  font-weight: 500;
+}
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Poppins" !important ;
+  font-weight: 600;
+  font-size: 19px;
+  /* line-height: 1.4375em;
+  letter-spacing: 0.01988em;
+  padding: 0;
+  position: relative;
+  display: block;
+  transform-origin: top left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 133%;
+  position: absolute;
+  left: 0;
+  margin-bottom: 25px ; */
+}
+.css-wgai2y-MuiFormLabel-asterisk {
+  color: red;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
